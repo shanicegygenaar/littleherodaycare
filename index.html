@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Little Hero's Daycare</title>
+        <meta charset ="UTF-8">
+        <link rel="stylesheet" href="LHD.css"/>
+    </head>
+    <body>
+        
+      
+        <header >
+            <div class="images">
+                <img src="school/logo.jpg"/></div>
+                <div class="school-info">
+                    <p> Little Hero's Daycare</p>
+                    </div>
+            <div class ="nav-bar">
+                <div class="nav-links">
+                    
+                    
+                
+        </header>
+        
+                
+        
+        <ul id="nav" class="nav1">
+            <li><a href="#form1">Questionaire</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+        </div>
+
+<!--This section more about the school-->
+
+
+<div class ="about-us">
+    <h2>About Us</h2>
+    <pre>
+        We are a daycare that can take care of your baby.
+        We do fun activities inside and outside.
+        There will always be laugther come rain or shine.
+        There are different types of learning we teach including for special needs children.
+        At Little Hero's Daycare we we look at a childs <b>Emotional, Health, and Personal well-being.</b>
+        We make memories that will last forever.
+        We love all children big or small we are here for them all.
+     </pre>
+</div>
+<!--A slide show-->
+<div class="main">
+    <img src="school/1.jpg" class="slideshow"/>
+    <img src="school/2.jpg" class="slideshow"/>
+    <img src="school/3.jpg" class="slideshow"/>
+    <img src="school/5.jpg" class="slideshow"/>
+    <img src="school/6.jpg" class="slideshow"/>
+</div>
+</br>
+</br>
+<!--The contact information-->
+<div class="container">
+<div class=contact-info id="contact">
+    <h1>Head Leader</h1>
+    <h2>Najewa Moffaf</h2>
+    <img src="school/najewa.jpg" />
+    <p>Cellphone: +27 60 842 2798</p>
+</div>
+    <div class="contact-info">
+    <h1>Teacher</h1>
+    <h2> Ra'eesah Poole</h2>
+    <img src="school/eesah.jpg"/>
+   
+    <p>Cellphone:+27 63 201 3864</br>
+       Email address: raeesahbergstedt@gmail
+        </p>
+    </p>
+    </div>
+    <div class="contact-info">
+        <h1> Address:</h1>
+    <address >
+        
+        11 King Street</br>
+        Cloetesville </br>
+        Stellenbosch</br>
+        7600
+    </address>
+</div>
+</div>
+</br>
+</br>
+</br>
+    <!--Form section-->
+</div>
+<div id="school"><img src="school/logo.jpg"></div>
+<div class="form" id="form1">
+    <h1 class="fade-in">Sign up for our Daycare:</h1>
+
+<form name="lhd" action="insert.php" method="POST"  onsubmit="return validateEmail()">
+    <label>1. Child Information</label></br></br>
+    <input type="text" name="name" placeholder="Name, Nickname" required/></br></br>
+    <label>Date Of Birth:</label></br></br>
+    <input type="date" name="dob"  required/></br></br>
+    <label>Gender:</label></br>
+    <label>Male</label>
+    <input type="radio" name="gender"  value="male"/>
+    <label>Female</label>
+    <input type="radio" name="gender"  value="female"/></br></br>
+    <input type="number" min="0" max="12" placeholder="Age"/></br></br>
+    <input type="text" name="allergies" placeholder="Existing Medical Conditions" required/></br></br>
+    <input type="text" placeholder="Allergies"/></br></br>
+    <label>Photo release</label>
+    <input type="checkbox" name="photo" /></br></br>
+
+    <label>2. Guardian Information</label></br></br>
+    <input type="text" placeholder="Name" required/></br></br>
+    <input type="email" placeholder="Email" required/></br></br>
+    <input type="tel"  name = "phone" placeholder="Phone number"  required/></br></br>
+    <input type="text" placeholder="Relationship to child" required/></br></br>
+    <input type="text" placeholder="Address"required/></br></br>
+
+    <label>3. Which guardian should be called first:</label></br></br>
+    <input type="text"/></br></br>
+
+    <label>4. Emergency Contact Information</label></br></br>
+    <input type="text" placeholder="Name" required/></br></br>
+    <input type="email" placeholder="Email" required/></br></br>
+    <input type="tel"  name="phone" placeholder="Phone number"  required/></br></br>
+    <input type="text" placeholder="Relationship to child" required/></br></br>
+    <input type="text" placeholder="Address"/></br></br>
+    <button  class="confetti-button">Submit</button>
+    
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="LHD.js"></script>
+    </body>
+    <footer>Copyright of Little Hero Daycare</footer>
+</html>
