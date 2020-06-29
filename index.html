@@ -3,6 +3,8 @@
     <head>
         <title>Little Hero's Daycare</title>
         <meta charset ="UTF-8">
+        <meta name="description" content="little hero daycare">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="LHD.css"/>
     </head>
     <body>
@@ -60,7 +62,7 @@
 <div class="container">
 <div class=contact-info id="contact">
     <h1>Head Leader</h1>
-    <h2>Najewa Moffaf</h2>
+    <h2>Najewa Moffat</h2>
     <img src="school/najewa.jpg" />
     <p>Cellphone: +27 60 842 2798</p>
 </div>
@@ -89,47 +91,72 @@
 </br>
 </br>
     <!--Form section-->
-</div>
-<div id="school"><img src="school/logo.jpg"></div>
-<div class="form" id="form1">
-    <h1 class="fade-in">Sign up for our Daycare:</h1>
 
-<form name="lhd" action="mailto:sgygenaar@gmail.com" method="POST"  onsubmit="return validateEmail()">
+<div id="school"><img src="school/logo.jpg"></div>
+
+    
+<form name="lhd"  action="https://formspree.io/sgygenaar@gmail.com" method="POST"  onsubmit="return validateEmail()">
+    <div class="form" id="form1">
+        <h1 class="fade-in">Sign up for our Daycare:</h1>
     <label>1. Child Information</label></br></br>
+    <label>Name, Nickname:</label>
     <input type="text" name="name" placeholder="Name, Nickname" required/></br></br>
-    <label>Date Of Birth:</label></br></br>
+    <label>Date Of Birth:</label>
     <input type="date" name="dob"  required/></br></br>
-    <label>Gender:</label></br>
-    <label>Male</label>
-    <input type="radio" name="gender"  value="male"/>
-    <label>Female</label>
-    <input type="radio" name="gender"  value="female"/></br></br>
+    
+</div>
+
+    <div class="gen">
+        <label >Gender:</label>
+        
+    <label>
+    <input type="radio"   name="gender"  value="male">Male</label>
+    <label>
+    <input type="radio" name="gender"  value="female" > Female</label></br></br>
+    
+   </div>
+
+   <div class="form" id="form1">
+    <label>Age:</label>
     <input type="number" min="0" max="12" placeholder="Age"/></br></br>
-    <input type="text" name="allergies" placeholder="Existing Medical Conditions" required/></br></br>
+    <label>Existing Medical Conditions:</label>
+    <input type="text" name="allergies" placeholder=" Medical Conditions" required/></br></br>
+    <label>Allergies:</label>
     <input type="text" placeholder="Allergies"/></br></br>
-    <label>Photo release</label>
-    <input type="checkbox" name="photo" /></br></br>
 
     <label>2. Guardian Information</label></br></br>
-    <input type="text" placeholder="Name" required/></br></br>
-    <input type="email" placeholder="Email" required/></br></br>
+    <label>Name:</label>
+    <input type="text" placeholder="G_Name" required/></br></br>
+    <label>Email:</label>
+    <input type="email" placeholder="Email"name="email" Srequired/></br></br>
+    <label>Phone number:</label>
     <input type="tel"  name = "phone" placeholder="Phone number"  required/></br></br>
-    <input type="text" placeholder="Relationship to child" required/></br></br>
-    <input type="text" placeholder="Address"required/></br></br>
+    <label>Relationship to child:</label>
+    <input type="text" placeholder="Relationship to child" name="relation" required/></br></br>
+    <label>Address:</label>
+    <input type="text" placeholder="Address" name="address"required/></br></br>
 
     <label>3. Which guardian should be called first:</label></br></br>
-    <input type="text"/></br></br>
+    <label>Name</label>
+    <input type="text" name="callFirst" placeholder="Guardian"/> </br></br>
+    
 
     <label>4. Emergency Contact Information</label></br></br>
-    <input type="text" placeholder="Name" required/></br></br>
-    <input type="email" placeholder="Email" required/></br></br>
-    <input type="tel"  name="phone" placeholder="Phone number"  required/></br></br>
-    <input type="text" placeholder="Relationship to child" required/></br></br>
-    <input type="text" placeholder="Address"/></br></br>
-    <button  class="confetti-button">Submit</button>
+    <label>Name:</label>
+    <input type="text" placeholder="e_Name" required/></br></br>
+    <label>Email:</label>
+    <input type="email" placeholder="e_email" required/></br></br>
+    <label>Phone number:</label>
+    <input type="tel"  name="phone_num" placeholder="Phone number"  required/></br></br>
+    <label>Relationship to child:</label>
+    <input type="text" placeholder="Relationship to child"  name="relationship" required/></br></br>
+    <label>Address:</label>
+    <input type="text" placeholder="Address" name="address2" /></br></br>
+    <button  name="submit">Submit</button>
     
-</form>
 </div>
+</form>
+
 
 
 
@@ -141,5 +168,5 @@
 
 <script src="LHD.js"></script>
     </body>
-    <footer>Copyright of Little Hero Daycare</footer>
+    <footer>Copyright © 2020 Little Hero Daycare</footer>
 </html>

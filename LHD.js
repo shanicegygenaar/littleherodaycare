@@ -51,4 +51,3 @@ setTimeout(carousel, 3000); // Change image every 3 seconds
      }
 
  }
- 

@@ -130,10 +130,9 @@ flex-direction: row;
 .change{
     display:block;
 }
-.form {
-    text-align: center;
-    background-color: midnightblue;
-}
+
+    
+
 #school img {
     width:150p;
     height:150px;
@@ -146,9 +145,24 @@ flex-direction: row;
     text-align: center;
     padding:10px;
 }
+.form {
+    text-align: center;
+    background-color: midnightblue;
+   
+}
+  .form input {
+        margin:5px 10px 5px 0px;
+        padding: 5px;
+      width:240px;
+    
+
+}
+
+  
 .fade-in {
     animation: fadeIn ease 20s;
     color:black;
+    
 }
 @keyframes fadeIn {
     0% {
@@ -164,19 +178,45 @@ button {
     border:none;
     font-size: 20px;
     border-radius: 60%;
+
+    
+    
+}
+
+
+ .form{
+    width: 100%;
+    
+    font-size: 18px;
+    font-style: oblique;
+    display: inline-block;
+    text-align: center;
+   
+    
+} 
+  .form label {
+    width: 350px;
+    font-size: 18px;
+    font-style: oblique;
+    display: inline-block;
+    text-align: right;
+   
+    
+} 
+.gen{
+    font-size: 18px;
+    font-style: oblique;
+    display: inline-block;
+    text-align: center;
+    background-color: midnightblue;
+    width:100%;
+    border:none;
+
 }
 
 
 
-
-label {
-    font-size: 18px;
-    font-style: oblique;
-    
-
-    
- 
-} footer {
+footer {
     float: right;
     color:red;
 }
@@ -207,6 +247,7 @@ address {
     justify-content: space-around;
     border-top: 2px solid red;
 }
+ 
 @media screen and (max-width:600px) {
     .about-us h2 {
         text-align: center;
@@ -242,6 +283,40 @@ address {
             justify-content: space-around;
             border-top: 2px solid red;
         }
+        .form {
+            text-align: center;
+            background-color: midnightblue;
+        }
+        .form input {
+            vertical-align: middle;
+            margin:5px 10px 5px 0px;
+            padding: 10px;
+          width:240px;
+        
+    
+    }
+    .form label {
+        width: 350px;
+        font-size: 18px;
+        font-style: oblique;
+        display: inline-block;
+        text-align: left;
+       
+        
+    } 
+    .gen {
+        font-size: 18px;
+        font-style: oblique;
+        display: inline-block;
+        text-align: center;
+        background-color: midnightblue;
+        width:100%;
+        border:none;
+
+    }
+    
+    
+    
         .fade-in {
             animation: fadeIn ease 20s;
             color:black;
@@ -255,7 +330,7 @@ address {
             }
         }
 }
-@media screen and (min-width:1200px) {
+@media screen and(min-width:600px) {
     .about-us h2 {
         text-align: center;
         padding:10px;
@@ -283,6 +358,90 @@ address {
         }
         .container {
             display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-basis: 1;
+            justify-content: space-between;
+            justify-content: space-around;
+            border-top: 2px solid red;
+        }
+        .form {
+            text-align: center;
+            background-color: midnightblue;
+        }
+        .form {
+            text-align: center;
+            background-color: midnightblue;
+        }
+        .form input {
+            vertical-align: middle;
+            margin:5px 10px  0px;
+            padding: 10px;
+          width:240px;
+        
+    
+    }
+    .form label {
+        width: 350px;
+        font-size: 18px;
+        font-style: oblique;
+        display: inline-block;
+        text-align: left;
+       
+        
+    } 
+    .gen{
+        font-size: 18px;
+        font-style: oblique;
+        display: inline-block;
+        text-align: center;
+        background-color: midnightblue;
+        border:none;
+    }
+    
+    
+    
+        .fade-in {
+            animation: fadeIn ease 20s;
+            color:black;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }  
+}
+@media screen and (min-width:1200px) {
+    .about-us h2 {
+        text-align: center;
+        padding:10px;
+        margin:10px;
+        font-size: 22px;;
+        border-top: 2px solid red;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .about-us pre{
+        text-align:center;
+        font-size: 18px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .contact-info h2{
+        color:midnightblue;
+        
+        }
+        .contact-info h1 {
+            color:red;
+            
+        }
+        address {
+            text-align: center;
+            font-size: 26px;
+        }
+        .container {
+            display: flex;
             flex-direction: row;
             align-items: center;
             flex-basis: 1;
@@ -290,4 +449,39 @@ address {
             justify-content: space-around;
             border-top: 2px solid red;
         }
+        .form {
+            text-align: center;
+            background-color: midnightblue;
+        }
+        .form {
+            text-align: center;
+            background-color: midnightblue;
+        }
+        .form input {
+            vertical-align: middle;
+            margin:5px 10px  0px;
+            padding: 10px;
+          width:240px;
+        
+    
+    }
+    .form label {
+        width: 350px;
+        font-size: 18px;
+        font-style: oblique;
+        display: inline-block;
+        text-align: right;
+       
+        
+    } 
+    .gen {
+
+        font-size: 18px;
+        font-style: oblique;
+        display: inline-block;
+        text-align: center;
+        background-color: midnightblue;
+        border:none;
+    }
+    
 }
